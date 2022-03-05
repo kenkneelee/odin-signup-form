@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Sign-up Form</title>
-    <link rel="stylesheet" href="styles/style.css"/>
-    <script src="scripts/main.js" defer></script>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Odin Sign-up Form</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <header>
+        Odin
+    </header>
+    <body>
+        <div>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+            <span>You <em>know</em> you want to.</span>
+        </div>
+        <div>
+            Let's do this!
+            <form>
+                <label for="firstName" id="firstName-label">First name</label>
+                <input id="firstName" type="text" placeholder="First name" required>
+                
+                <label for="lastName" id="lastName-label">Last name</label>
+                <input id="lastName" type="text" placeholder="Last name" required>
+
+                <label for="email" id="email-label">Email address</label>
+                <input id="email" type="email" placeholder="Email address" required>
+
+                <label for="phone" id="phone-label">Phone Number</label>
+                <input id="phone" type="tel" placeholder="Phone number" required>
+
+                <label for="pass" id="pass-label">Password</label>
+                <input id="pass" type="password" placeholder="Password" required>
+
+                <label for="passConfirm" id="passConfirm-label">Confirm Password</label>
+                <input id="passConfirm" type="password" placeholder="Password" required>
+        </div>
+        <div>
+            <button type="submit">Create account</button>
+            </form>
+            Already have an account? <a href="">Log in</a>
+        </div>
+    </body>
 </html>
