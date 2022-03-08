@@ -2,7 +2,7 @@
     font-family: "Norse";
     src: URL("../fonts/Norse-Bold.otf") format("truetype");
 }
-
+/* Setup */
 body,
 html {
     margin: 0;
@@ -19,30 +19,49 @@ body {
     height: 100%;
     width: 100%;
 }
+/* Left side */
 
 .left {
-    width: 25%;
+    width: 30%;
     height: 100%;
-    font-family: "Norse";
     background-color: rgba(197, 197, 197, 0.459);
     background-image: url("../images/background.jpeg");
     background-size: cover;
-    color:white;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 150px;
+    height: 150px;
 }
 
 .logo {
     height: 100px;
 }
 
-h1 {
+.title {
+    font-family: "Norse";
     font-size: 80px;
-    display:flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.295);
+    position: relative;
+    top: 10px;
+    color: white;
 }
 
+.credit {
+    color:white;
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    left: 7.5%;
+}
+
+/* Right side */
 .right {
-    width: 75%;
+    width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -50,17 +69,17 @@ h1 {
 }
 
 .top {
-    background-color: beige;
+    background-color: rgba(128, 128, 128, 0.136);
     flex-grow: 1;
 }
 
 form {
-    flex-grow: 2;
-    background-color: blueviolet;
+    flex-grow: 1;
+    background-color: white;
 }
 
 .mid {
-    background-color: blanchedalmond;
+    background-color: white;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -71,6 +90,6 @@ input {
 }
 
 .bottom {
-    background-color: aquamarine;
+    background-color: rgba(128, 128, 128, 0.136);
     height: 50%;
 }
