@@ -59,37 +59,63 @@ body {
     left: 7.5%;
 }
 
+.credit > a {
+    color:white;
+}
+
 /* Right side */
 .right {
     width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(58, 58, 58, 0.384);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.toptext, .midtext, .bottomtext {
+    margin-left:40px;
+    margin-right:280px;
 }
 
 .top {
-    background-color: rgba(128, 128, 128, 0.136);
     flex-grow: 1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.toptext {
+
+    position: relative;
+    top:100px;
 }
 
 form {
-    flex-grow: 1;
+    flex-grow: 2;
     background-color: white;
 }
 
 .mid {
-    background-color: white;
+    background-color: rgba(128, 128, 128, 0.136);
     height: 50%;
     display: flex;
     flex-direction: column;
 }
 
+
 input {
-    width: 160px;
+    width: 240px;
 }
 
 .bottom {
-    background-color: rgba(128, 128, 128, 0.136);
+    background-color: rgba(128, 128, 128, 0.236);
     height: 50%;
+}
+
+button {
+    background-color: #596D48;
+    color:white;
+    padding: 10px 50px;
+    font-size:20px;
+    border-radius:15px;
 }
