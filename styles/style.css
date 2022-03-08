@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Norse";
+    src: URL("../fonts/Norse-Bold.otf") format("truetype");
+}
+
 body,
 html {
     margin: 0;
@@ -18,7 +23,22 @@ body {
 .left {
     width: 25%;
     height: 100%;
+    font-family: "Norse";
     background-color: rgba(197, 197, 197, 0.459);
+    background-image: url("../images/background.jpeg");
+    background-size: cover;
+    color:white;
+}
+
+.logo {
+    height: 100px;
+}
+
+h1 {
+    font-size: 80px;
+    display:flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.295);
 }
 
 .right {
@@ -42,12 +62,12 @@ form {
 .mid {
     background-color: blanchedalmond;
     height: 50%;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
 input {
-    width:160px;
+    width: 160px;
 }
 
 .bottom {
