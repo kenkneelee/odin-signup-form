@@ -52,15 +52,15 @@ body {
 }
 
 .credit {
-    color:white;
+    color:rgba(255, 255, 255, 0.75);
     text-align: center;
     position:fixed;
-    bottom:0;
+    bottom: 10px;
     left: 7.5%;
 }
 
 .credit > a {
-    color:white;
+    color:rgba(255, 255, 255, 0.75);
 }
 
 /* Right side */
@@ -79,6 +79,7 @@ body {
 }
 
 .top {
+    background-color: rgba(0, 0, 0,0.01);
     flex-grow: 1;
     font-weight: bold;
     font-size: 20px;
@@ -96,26 +97,61 @@ form {
 }
 
 .mid {
-    background-color: rgba(128, 128, 128, 0.136);
     height: 50%;
     display: flex;
     flex-direction: column;
-}
+    box-shadow: 6px 4px 5px 1px rgba(0,0,0,0.1);}
 
 
 input {
-    width: 240px;
+    height:24px;
+    width:75%;
+    border-radius: 5px;
+    border:1px solid rgba(128, 128, 128, 0.123);
+}
+
+table {
+    width:100%;
+    height:100%;
+}
+
+tr {
+    width:50px;
+}
+
+.tableItem {
+    display:flex;
+    flex-direction: column;
+}
+
+label {
+    font-size:10px;
+    text-transform: uppercase;
+    font-weight:bold;
+    color:grey;
 }
 
 .bottom {
-    background-color: rgba(128, 128, 128, 0.236);
+    background-color: rgba(0, 0, 0,0.01);
     height: 50%;
+}
+
+.bottomtext {
+    padding-top:30px;
+}
+
+.bottomtext a {
+    color:#596D48;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 button {
     background-color: #596D48;
     color:white;
-    padding: 10px 50px;
-    font-size:20px;
-    border-radius:15px;
+    padding: 14px 50px;
+    font-size:16px;
+    font-weight: bold;
+    border-radius:10px;
+    margin-bottom:20px;
 }
