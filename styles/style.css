@@ -86,7 +86,6 @@ body {
 }
 
 .toptext {
-
     position: relative;
     top:100px;
 }
@@ -102,6 +101,9 @@ form {
     flex-direction: column;
     box-shadow: 6px 4px 5px 1px rgba(0,0,0,0.1);}
 
+h2 {
+    font-weight: normal;
+}
 
 input {
     height:24px;
