@@ -160,7 +160,7 @@ button {
 
 @media (max-width:800px) {
     html, body {
-        height: 110%;
+        height: auto;
     }
 
     body {
@@ -178,14 +178,15 @@ button {
     }
 
     .credit {
-        color:black;
-        position:fixed;
-        bottom:10px;
+        color:rgba(255, 255, 255, 0.295);
+        position:absolute;
+        top:170px;
         width:100%;
+        font-size:10px;
     }
 
     .credit a {
-        color:black;
+        color:rgba(255, 255, 255, 0.295);
     }
 
     .banner {
@@ -200,13 +201,22 @@ button {
     .toptext, .midtext, .bottomtext {
         margin-left: 40px;
         margin-right: 40px;
+        padding-top:30px;
+        padding-bottom:30px;
     }
 
     .toptext {
+        position: initial;
         top:40px;
+        font-size:16px;
+
     }
 
     .mid {
-        height:60%;
+        height:50%;
+    }
+
+    form {
+        flex-grow:2;
     }
 }
